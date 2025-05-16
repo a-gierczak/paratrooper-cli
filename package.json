@@ -1,0 +1,76 @@
+{
+  "author": "Alexander",
+  "bin": {
+    "ota": "./bin/dev.js"
+  },
+  "scripts": {
+    "build": "shx rm -rf dist && tsc -b",
+    "lint": "eslint .",
+    "codegen": "orval --config ./orval.config.ts",
+    "postinstall": "patch-package"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^6.0.1",
+    "@types/cli-progress": "^3.11.6",
+    "@types/lodash": "^4.17.10",
+    "chalk": "^4.1.2",
+    "cli-progress": "^3.12.0",
+    "date-fns": "^3.6.0",
+    "debug": "^4.3.4",
+    "fast-glob": "^3.3.2",
+    "form-data": "^4.0.0",
+    "lodash": "^4.17.21",
+    "md5-file": "^5.0.0",
+    "mime": "^3.0.0",
+    "node-fetch": "^2.7.0",
+    "ora-classic": "^5.4.2",
+    "pkg-dir": "4.2.0",
+    "resolve-from": "^5.0.0",
+    "table": "^6.9.0",
+    "yargs": "^17.7.2",
+    "zx": "^8.1.4"
+  },
+  "description": "oclif example Hello World CLI",
+  "devDependencies": {
+    "@eslint/js": "^8.57.0",
+    "@types/debug": "^4.1.10",
+    "@types/mime": "^3.0.4",
+    "@types/node": "^20.16.5",
+    "@types/node-fetch": "^2.6.7",
+    "@types/yargs": "^17.0.33",
+    "@typescript-eslint/eslint-plugin": "^7.3.1",
+    "@typescript-eslint/parser": "^7.3.1",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "globals": "^15.14.0",
+    "oclif": "^4.0.3",
+    "orval": "7.0.1",
+    "patch-package": "^8.0.0",
+    "prettier": "^3.3.3",
+    "shx": "^0.3.3",
+    "tsx": "^4.19.1",
+    "typescript": "^5",
+    "typescript-eslint": "^7.3.1"
+  },
+  "peerDependencies": {
+    "expo": "^46"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "files": [
+    "/bin",
+    "/dist",
+    "/npm-shrinkwrap.json"
+  ],
+  "homepage": "https://github.com/a-gierczak/paratrooper-cli",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "@paratrooper/cli",
+  "repository": "https://github.com/a-gierczak/paratrooper-cli",
+  "version": "1.0.0",
+  "bugs": "https://github.com/a-gierczak/paratrooper-cli/issues",
+  "types": "dist/index.d.ts"
+}
