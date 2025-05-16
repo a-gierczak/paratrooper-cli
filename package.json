@@ -1,7 +1,7 @@
 {
-  "author": "Alexander",
+  "author": "Aleksander Gierczak",
   "bin": {
-    "ota": "./bin/dev.js"
+    "ota": "./bin/run.js"
   },
   "scripts": {
     "build": "shx rm -rf dist && tsc -b",
@@ -45,7 +45,6 @@
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-promise": "^6.1.1",
     "globals": "^15.14.0",
-    "oclif": "^4.0.3",
     "orval": "7.0.1",
     "patch-package": "^8.0.0",
     "prettier": "^3.3.3",
@@ -70,7 +69,7 @@
   "main": "dist/index.js",
   "name": "@paratrooper/cli",
   "repository": "https://github.com/a-gierczak/paratrooper-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "bugs": "https://github.com/a-gierczak/paratrooper-cli/issues",
   "types": "dist/index.d.ts"
 }
