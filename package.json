@@ -68,7 +68,7 @@
   "main": "dist/index.js",
   "name": "@paratrooper/cli",
   "repository": "https://github.com/a-gierczak/paratrooper-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "bugs": "https://github.com/a-gierczak/paratrooper-cli/issues",
   "types": "dist/index.d.ts"
 }
