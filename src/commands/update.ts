@@ -34,7 +34,7 @@ interface Args {
 
 export const updateCommand: CommandModule<unknown, Args> = {
   command: 'update',
-  describe: 'Create a new update',
+  describe: 'Push a new update',
   builder: (yargs) =>
     yargs.options({
       message: {
@@ -49,7 +49,7 @@ export const updateCommand: CommandModule<unknown, Args> = {
       },
       skipExport: {
         type: 'boolean',
-        description: 'Skip extracting bundle. Useful for debugging.',
+        description: 'Skip bundling the code and exporting assets. Useful for debugging.',
         default: false,
       },
     }),

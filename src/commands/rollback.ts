@@ -11,7 +11,7 @@ interface Args {
 
 export const rollbackCommand: CommandModule<unknown, Args> = {
   command: 'rollback <updateId>',
-  describe: 'Rollback an update',
+  describe: 'Rollback a previously published update',
   async handler(args) {
     const { projectID } = getConfig();
     const { data: update } = await withSpinner(

@@ -22,7 +22,7 @@ import { Project } from '../api/model/project.js';
 
 export const initCommand: CommandModule = {
   command: 'init',
-  describe: 'Initialize a Paratrooper project',
+  describe: 'Initialize a new Paratrooper project',
   async handler() {
     assertInsideNpmPackageRootDir();
 
