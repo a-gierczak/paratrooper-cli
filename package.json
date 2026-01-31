@@ -5,9 +5,9 @@
   },
   "scripts": {
     "build": "shx rm -rf dist && tsc -b",
+    "typecheck": "tsc --noEmit",
     "lint": "eslint .",
-    "codegen": "orval --config ./orval.config.ts",
-    "postinstall": "patch-package"
+    "codegen": "orval --config ./orval.config.ts"
   },
   "dependencies": {
     "@inquirer/prompts": "^6.0.1",
@@ -30,7 +30,7 @@
     "yargs": "^17.7.2",
     "zx": "^8.1.4"
   },
-  "description": "oclif example Hello World CLI",
+  "description": "CLI for Paratrooper OTA service",
   "devDependencies": {
     "@eslint/js": "^8.57.0",
     "@types/debug": "^4.1.10",
@@ -46,7 +46,6 @@
     "eslint-plugin-promise": "^6.1.1",
     "globals": "^15.14.0",
     "orval": "7.0.1",
-    "patch-package": "^8.0.0",
     "prettier": "^3.3.3",
     "shx": "^0.3.3",
     "tsx": "^4.19.1",
